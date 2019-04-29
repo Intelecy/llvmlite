@@ -161,6 +161,8 @@ packages = ['llvmlite',
 install_requires = []
 setup_requires = []
 if sys.version_info < (3, 4):
+    import time
+    time.sleep(300)
     install_requires.append('enum34')
     setup_requires.append('enum34')
 
